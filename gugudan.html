@@ -8,10 +8,15 @@
 </head>
 <body>
     <script>
-        var num = Number(prompt('숫자입력'));
-        for ( i = 1; i <= 9; i++) {
-            document.write( num + ' * '+ i + '='  + ( num * i ) + '<br>');
+        for (var i = 2; i <= 9; i++ ){
+            document.write('<h2>' + i + '단</h2>');
+            for (var j = 1; j <= 9; j++ ){
+                var value = i * j;
+                document.write(i + ' X ' + j + ' = ' + value + '<br>' );
+            }
+            document.write('<br>');
         }
+
     
     </script>
 </body>
